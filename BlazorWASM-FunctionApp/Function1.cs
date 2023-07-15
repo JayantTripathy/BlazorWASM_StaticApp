@@ -18,7 +18,7 @@ namespace BlazorWASM_FunctionApp
     public class Function1
     {
    
-        [FunctionName("GetCricketers")]
+        [FunctionName("GetCricketers1")]
         public async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
