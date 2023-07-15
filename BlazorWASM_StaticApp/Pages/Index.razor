@@ -40,8 +40,10 @@
                     ReferenceHandler = ReferenceHandler.Preserve,
                     PropertyNameCaseInsensitive = true
                 };
-            cricketers = await Http.GetFromJsonAsync<List<Cricketer>>("sample-data/cricketers.json", options);
-            // CricketersList = cricketers.Shuffle<Cricketer>().ToList();
+            //cricketers = await Http.GetFromJsonAsync<List<Cricketer>>("sample-data/cricketers.json", options);
+            //CricketersList = cricketers.ToList();
+
+            cricketers = await Http.GetFromJsonAsync<List<Cricketer>>("/api/GetCricketers");
             CricketersList = cricketers.ToList();
         }
         catch(Exception ex)

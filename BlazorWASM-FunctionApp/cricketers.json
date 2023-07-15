@@ -1,0 +1,72 @@
+﻿[
+  {
+    "id": 1,
+    "image": "msd.jpg",
+    "name": "MS Dhoni",
+    "country": "India",
+    "description": "Mahendra Singh Dhoni is an Indian professional cricketer. He was captain of the Indian national team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. Dhoni is widely considered one of the greatest cricket captains, wicket-keeper-batsman and finishers in the history of cricket."
+  },
+  {
+    "id": 2,
+    "image": "vk.jpg",
+    "name": "Virat Kohli",
+    "country": "India",
+    "description": "Virat Kohli is an Indian international cricketer and the former captain of the Indian national cricket team who plays as a right-handed batsman for Royal Challengers Bangalore in the IPL and for Delhi in Indian domestic cricket."
+  },
+  {
+    "id": 3,
+    "image": "smith.jpg",
+    "name": "Steve Smith",
+    "country": "Australia",
+    "description": "Steven Peter Devereux Smith is an Australian international cricketer and former captain of the Australian national team."
+  },
+  {
+    "id": 4,
+    "image": "babar-azam.jpg",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "description": "Babar Azam, is a Pakistani international cricketer and captain of the Pakistan national cricket team who is widely regarded as one of the finest batters in contemporary cricket being the only cricketer in the world to be in the top 3 rankings across all formats."
+  },
+  {
+    "id": 5,
+    "image": "Kane-Williamson.jpg",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "description": "Kane Williamson is a New Zealand cricketer who is currently the captain of the New Zealand national team in limited overs cricket. On 27 February 2023, Williamson became the all-time leading runscorer for New Zealand in test cricket. He is a right-handed batsman and an occasional off spin bowler."
+  },
+  {
+    "id": 6,
+    "image": "rabada.jpg",
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "description": "Kagiso Rabada is a South African international cricketer who plays all formats of the game. He is a right arm fast bowler. He made his international debut in November 2014 in limited-overs cricket before going on to make his Test debut in November 2015"
+  },
+  {
+    "id": 7,
+    "image": "bumrah.jpg",
+    "name": "Jasprit Bumhra",
+    "country": "India",
+    "description": "Jasprit Bumrah is an Indian international cricketer who played for the Indian cricket team in all formats of the game. A right-arm fast bowler with a unique bowling action, Bumrah is considered one of the best bowlers in the world."
+  },
+  {
+    "id": 8,
+    "image": "starc.jpg",
+    "name": "Mitchell Starc",
+    "country": "Australian",
+    "description": "Mitchell Starc is an Australian international cricketer who plays for the Australian national team and New South Wales in domestic cricket."
+  },
+  {
+    "id": 9,
+    "image": "shaheen.jpg",
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "description": "Shaheen Shah Afridi is a Pakistani professional cricketer who plays for the Pakistan national cricket team and captains PSL franchise Lahore Qalandars. He is regarded as one of the best bowlers in contemporary world cricket across all formats."
+  },
+  {
+    "id": 10,
+    "image": "Rohit-Sharma.jpg",
+    "name": "Rohit Sharma",
+    "country": "India",
+    "description": "Rohit Sharma, is an Indian international cricketer and the current captain of India men’s cricket team in all formats. Considered one of the best batsmen of his generation and one of greatest opening batters of all time, Sharma is known for his timing, elegance, six-hitting abilities and leadership skills."
+  }
+]
