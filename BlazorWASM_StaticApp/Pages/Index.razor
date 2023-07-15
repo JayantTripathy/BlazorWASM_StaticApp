@@ -1,0 +1,53 @@
+﻿@page "/"
+@using BlazorWASM_StaticApp.Extensions;
+@using BlazorWASM_StaticApp.Models;
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@inject HttpClient Http;
+<PageTitle>Cricketers List</PageTitle>
+
+<h1>Top Cricketers List</h1>
+
+<div class="row">
+    @foreach (var cricketer in CricketersList)
+    {
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <CardComponent id="@cricketer.id"
+                           name="@cricketer.name"
+                           description="@cricketer.description"
+                           country="@cricketer.country"
+                           image="@cricketer.image" />
+        </div>
+
+    }
+</div>
+
+@code
+{
+    public List<Cricketer> CricketersList { get; set; } = new List<Cricketer>();
+    private List<Cricketer>? cricketers;
+    protected override async Task OnInitializedAsync()
+    {
+        await GetProducts();
+    }
+
+    private async Task GetProducts()
+    {
+        try
+        {
+            var options = new JsonSerializerOptions()
+                {
+                    ReferenceHandler = ReferenceHandler.Preserve,
+                    PropertyNameCaseInsensitive = true
+                };
+            cricketers = await Http.GetFromJsonAsync<List<Cricketer>>("sample-data/cricketers.json", options);
+            // CricketersList = cricketers.Shuffle<Cricketer>().ToList();
+            CricketersList = cricketers.ToList();
+        }
+        catch(Exception ex)
+        {
+            
+        }
+       
+    }
+}

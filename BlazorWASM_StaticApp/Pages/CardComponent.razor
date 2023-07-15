@@ -1,0 +1,37 @@
+﻿<div class="card-group">
+    <div class="card">
+        <img class="card-img-top" src="images/@image" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@name</h5>
+            <p class="card-text" title="@description">@description.Substring(0,80) ... </p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Country : <span>@country</span></small>
+        </div>
+    </div>
+</div>
+
+@code
+{
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttributes { get; set; }
+
+    [Parameter]
+    public int id { get; set; }
+
+    [Parameter]
+    public string image { get; set; }
+
+    [Parameter]
+    public string name { get; set; }
+
+    [Parameter]
+    public string country { get; set; }
+
+    [Parameter]
+    public string description { get; set; }
+}
