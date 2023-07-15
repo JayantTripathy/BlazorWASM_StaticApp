@@ -19,18 +19,14 @@ namespace BlazorWASM_FunctionApp
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("HTTP trigger function to get the cricketers list.");
+            var result = JsonConvert.DeserializeObject<List<Cricketer>>(GetJsonData());
 
-            //string name = req.Query["name"];
-
-            //string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            //dynamic data = JsonConvert.DeserializeObject(requestBody);
-            //name = name ?? data?.name;
-
-            //string responseMessage = string.IsNullOrEmpty(name)
-            //    ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-            //    : $"Hello, {name}. This HTTP triggered function executed successfully.";
-            var jsondata = @"[
+            return new OkObjectResult(result);
+        }
+        public static string GetJsonData()
+        {
+            return @"[
   {
     ""id"": 1,
     ""image"": ""msd.jpg"",
@@ -102,10 +98,6 @@ namespace BlazorWASM_FunctionApp
     ""description"": ""Rohit Sharma, is an Indian international cricketer and the current captain of India men’s cricket team in all formats. Considered one of the best batsmen of his generation and one of greatest opening batters of all time, Sharma is known for his timing, elegance, six-hitting abilities and leadership skills.""
   }
 ]";
-
-            var result = JsonConvert.DeserializeObject<List<Cricketer>>(jsondata);
-
-            return new OkObjectResult(result);
         }
     }
 }
